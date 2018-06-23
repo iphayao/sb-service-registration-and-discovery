@@ -44,7 +44,7 @@ public class EurekaClientApplicationTest {
 
     @Test
     public void shouldRegisterClientEurekaServer() throws InterruptedException {
-        Thread.sleep(5000);
+        Thread.sleep(60000);
 
         ResponseEntity<String> response = testRestTemplate.getForEntity("http://localhost:" + this.port + "/service-instance/a-bootiful-client", String.class);
 
